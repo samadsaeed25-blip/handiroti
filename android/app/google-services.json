@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "682302404647",
+    "project_id": "handi-roti-ordering",
+    "storage_bucket": "handi-roti-ordering.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682302404647:android:3742a849a9d11dc3a17602",
+        "android_client_info": {
+          "package_name": "com.example.handi_roti_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRJgsE9uO9aCsMC2Is9Q-6c7lMJlyJxb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682302404647:android:9215926b79afa4a9a17602",
+        "android_client_info": {
+          "package_name": "com.horizonx.handiroti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRJgsE9uO9aCsMC2Is9Q-6c7lMJlyJxb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
