@@ -50,9 +50,13 @@ workflows:
           pod install
           cd ..
 
-      - name: Build IPA
+      - name: Apply Codemagic provisioning profiles
         script: |
-          flutter build ipa --release
+          xcode-project use-profiles
+
+      - name: Build signed IPA
+        script: |
+          xcode-project build-ipa             --workspace "$XCODE_WORKSPACE"             --scheme "$XCODE_SCHEME"
 
     artifacts:
       - build/ios/ipa/*.ipa
