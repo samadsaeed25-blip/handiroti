@@ -22,10 +22,13 @@ workflows:
       - build/app/outputs/flutter-apk/*.apk
       - build/app/outputs/bundle/release/*.aab
 
-  
   ios-release:
     name: iOS Release Build
     max_build_duration: 60
+
+    integrations:
+      app_store_connect: apple-codemagic
+
     environment:
       flutter: stable
       xcode: latest
@@ -35,8 +38,6 @@ workflows:
       vars:
         XCODE_WORKSPACE: "ios/Runner.xcworkspace"
         XCODE_SCHEME: "Runner"
-      integrations:
-        app_store_connect: apple-codemagic
 
     scripts:
       - name: Get Flutter packages
