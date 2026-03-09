@@ -22,14 +22,21 @@ workflows:
       - build/app/outputs/flutter-apk/*.apk
       - build/app/outputs/bundle/release/*.aab
 
+  
   ios-release:
     name: iOS Release Build
     max_build_duration: 60
-    integrations:
-      app_store_connect: apple-codemagic
     environment:
       flutter: stable
       xcode: latest
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.zarasamad.handiroti
+      vars:
+        XCODE_WORKSPACE: "ios/Runner.xcworkspace"
+        XCODE_SCHEME: "Runner"
+      integrations:
+        app_store_connect: apple-codemagic
 
     scripts:
       - name: Get Flutter packages
@@ -38,11 +45,18 @@ workflows:
 
       - name: Install CocoaPods
         script: |
-          cd ios && pod install && cd ..
+          cd ios
+          pod install
+          cd ..
 
-      - name: Build unsigned/signed IPA
+      - name: Build IPA
         script: |
           flutter build ipa --release
 
     artifacts:
       - build/ios/ipa/*.ipa
+
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
