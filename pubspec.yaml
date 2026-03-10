@@ -1,3 +1,4 @@
+
 name: handi_roti_app
 description: Handi Roti Ordering Application
 publish_to: "none"
@@ -25,16 +26,15 @@ dependencies:
   shimmer: ^3.0.0
   image_picker: ^1.2.1
   firebase_messaging: ^15.2.10
-
   flutter_local_notifications: ^17.2.1
   share_plus: ^10.0.2
   path_provider: ^2.1.4
   flutter_native_splash: ^2.4.7
   flutter_launcher_icons: ^0.14.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^4.0.0
 
 flutter:
@@ -44,6 +44,7 @@ flutter:
     - assets/branding/handiroti_logo.png
     - assets/branding/handiroti_scooter.png
     - assets/branding/handiroti_applogo.png
+    - assets/branding/handiroti_appleapplogo.png
 
 flutter_native_splash:
   color: "#0B132B"
@@ -54,10 +55,10 @@ flutter_native_splash:
   android_12:
     image: assets/branding/handiroti_applogo.png
     color: "#0B132B"
-    
+
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/branding/handiroti_applogo.png"
+  image_path: "assets/branding/handiroti_appleapplogo.png"
   adaptive_icon_background: "#0B132B"
-  adaptive_icon_foreground: "assets/branding/handiroti_applogo.png"
+  adaptive_icon_foreground: "assets/branding/handiroti_appleapplogo.png"
