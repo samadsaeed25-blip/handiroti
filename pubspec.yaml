@@ -44,16 +44,15 @@ flutter:
     - assets/branding/handiroti_logo.png
     - assets/branding/handiroti_scooter.png
     - assets/branding/handiroti_applogo.png
-    - assets/branding/handi_roti_splash.png
 
 flutter_native_splash:
   color: "#0B132B"
-  image: assets/branding/handi_roti_splash.png
+  image: assets/branding/handiroti_applogo.png
   android: true
   ios: true
 
   android_12:
-    image: assets/branding/handi_roti_splash.png
+    image: assets/branding/handiroti_applogo.png
     color: "#0B132B"
     
 flutter_launcher_icons:
