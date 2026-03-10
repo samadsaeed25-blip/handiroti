@@ -1,4 +1,3 @@
-
 name: handi_roti_app
 description: Handi Roti Ordering Application
 publish_to: "none"
@@ -44,7 +43,6 @@ flutter:
     - assets/branding/handiroti_logo.png
     - assets/branding/handiroti_scooter.png
     - assets/branding/handiroti_applogo.png
-    - assets/branding/handiroti_appleapplogo.png
 
 flutter_native_splash:
   color: "#0B132B"
@@ -62,3 +60,4 @@ flutter_launcher_icons:
   image_path: "assets/branding/handiroti_appleapplogo.png"
   adaptive_icon_background: "#0B132B"
   adaptive_icon_foreground: "assets/branding/handiroti_appleapplogo.png"
+  remove_alpha_ios: true
